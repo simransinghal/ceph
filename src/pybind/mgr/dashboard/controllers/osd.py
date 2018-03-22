@@ -76,6 +76,7 @@ class Osd(RESTController):
                          '')
         r, outb, outs = result.wait()
         if r != 0:
+            histogram = None
             logger.warning('Failed to load histogram for OSD %s', svc_id)
             logger.debug(outs)
             histogram = outs

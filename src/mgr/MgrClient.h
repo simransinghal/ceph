@@ -123,9 +123,8 @@ public:
   void update_osd_health(std::vector<OSDHealthMetric>&& metrics);
 
 private:
-  void _send_stats();
-  void _send_pgstats();
-  void _send_report();
+  void send_stats();
+  void send_report();
 };
 
 #endif
